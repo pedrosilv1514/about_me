@@ -34,10 +34,12 @@ body {
 
   /*background: color image repeat position/size */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 90vh
 }
 body * {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
+  
 }
 
 #container {
@@ -154,4 +156,16 @@ ul li a:hover {
 
 #social-links a:hover {
   background: var(--highlight-color);
+}
+
+/* media queeries */
+@media(min-width: 700px){
+  :root{
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  
+  .light{
+    --bg-url: url(./assets/bg-mobile-light.jpg);
+  }
+
 }
